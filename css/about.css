@@ -1,0 +1,32 @@
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other
+  @media (max-width: 600px) {
+    .grid-container  {
+      grid-template-areas:
+        'header header header header header header'
+        'left left left left left left'
+        'middle middle middle middle middle middle'
+        'right right right right right right'
+        'footer footer footer footer footer footer';
+    }
+
+  }*/
+
+  .map{
+    overflow: hidden;
+    padding-bottom: 80%;
+    position: relative;
+    height: 0;
+
+    }
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    }
+

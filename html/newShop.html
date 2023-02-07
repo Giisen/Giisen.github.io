@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>shoppen</title>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/Javascript/Data.js"></script>
+    <script defer src="/Javascript/newShop.js"></script>
+    <link rel="stylesheet" href="/css/newShop.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Giisen sneakers</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            <a class="nav-link active fw-bold" href="#">Shop</a>
+            <a class="nav-link" href="/html/shoppingcart.html">Cart</a>
+            <a class="nav-link" href="/html/about.html">About us</a>
+          </div>
+        </div>
+      </div>
+      <div class="classIconAndAmount">
+        <div id="cartIcon" class="fs-6 fw-bold text-info"></div>
+        <div id="cartAmount" class="fs-6 fw-bold text-info"></div>
+      </div>
+
+      <!-- <a
+        class="nav-link text-info fw-bold cartAmount"
+        id="cartAmount"
+        href="/html/shoppingcart.html"
+        >0</a
+      > -->
+    </nav>
+
+    <main>
+      <div class="row"><h1>.</h1></div>
+      <div class="container-fluid mt-4">
+        <div class="row">
+          <div class="h1 text-center mt-3 mb-4 text-dark">
+            Welcome to Giisen Sneakers store
+          </div>
+          <div class="col-1">
+            <div class="shadow-lg p-3 mb-5 mt-5 rounded">
+              <h4 id="header-shop-text">Filter based on last weeks snowfall</h4>
+              <p id="Weather-based-text"></p>
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="clearFilter()"
+              >
+                Show all sneakers
+              </button>
+            </div>
+          </div>
+
+          <div class="col-4"></div>
+
+          <div class="col-2 fw-bold text-start">
+            <div class="shadow-lg p-3 mb-5 mt-5 rounded">
+              <ul id="products" class="list-group"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-2"></div>
+
+          <div class="col-3"></div>
+        </div>
+      </div>
+    </main>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-text"></div>
+      </div>
+    </div>
+  </body>
+</html>
