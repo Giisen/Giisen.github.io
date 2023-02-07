@@ -188,13 +188,13 @@ function getItemInfo(id) {
         </div>
 
         <div class="buttons">
-          <i onclick="removeOneItem(${search.id})" class="bi bi-dash-lg">-</i>
+          <i onclick="removeOneItem(${search.id})" class="bi bi-dash-lg"></i>
 
           <div id=${search.id} class="quantity">
             ${search.item === undefined ? 0 : search.item}
           </div>
 
-          <i onclick="addOneItem(${search.id})" class="bi bi-plus-lg">+</i>
+          <i onclick="addOneItem(${search.id})" class="bi bi-plus-lg"></i>
         </div>
 
       </div>

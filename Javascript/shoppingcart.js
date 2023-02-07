@@ -56,10 +56,9 @@ function generateCart() {
       cardImg.style.width = "100%";
       cardImg.style.height = "100%";
       cardImg.style.borderRadius="15px"
-      cardImg.alt = "${id.name}";
+      cardImg.alt = "${prod.item.name}";
 
       // innehåll i element
-
       cardheader.innerText = prod.name;
       cardPrice.innerText ="Total item cost: " + prod.price * prod.item + " " + "kr";
       cardImg.src = prod.img;
