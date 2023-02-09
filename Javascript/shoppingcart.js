@@ -33,7 +33,12 @@ function generateCart() {
       const cardRemove = document.createElement("btn");
 
       //Styla Element
-      card.classList.add("card", "mb-5", "cursor-pointer", "shadow-lg");
+      card.classList.add(
+        "card",
+        "mb-5",
+        "cursor-pointer",
+        "shadow-lg"
+      );
       cardheader.classList.add("card-header", "bg-info", "fw-bold");
       cardbody.classList.add("card-body");
       cardText.classList.add("card-text");
@@ -55,12 +60,13 @@ function generateCart() {
       );
       cardImg.style.width = "100%";
       cardImg.style.height = "100%";
-      cardImg.style.borderRadius="15px"
+      cardImg.style.borderRadius = "15px";
       cardImg.alt = "${prod.item.name}";
 
       // innehåll i element
       cardheader.innerText = prod.name;
-      cardPrice.innerText ="Total item cost: " + prod.price * prod.item + " " + "kr";
+      cardPrice.innerText =
+        "Total item cost: " + prod.price * prod.item + " " + "kr";
       cardImg.src = prod.img;
       cardItems.innerText = prod.item + " " + "st";
       cardAdd.innerText = "+";

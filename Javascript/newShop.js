@@ -3,7 +3,6 @@ const modal = document.getElementById("myModal");
 const apilist = document.querySelector("#Weather-based-text");
 
 async function getAPI() {
-  // 57.71, 11.72;
   const url = new URL(
     "https://api.open-meteo.com/v1/forecast?latitude=61.71&longitude=12.72&current_weather=true&timezone=auto&daily=snowfall_sum"
   );
